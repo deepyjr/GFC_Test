@@ -1,7 +1,7 @@
 # GFC_Test
  Django App Blog
  
-You have to watch this gif before : http://gph.is/1QdK1Yg
+You have to watch this gif before : http://gph.is/1sFQ8hD
 
 
 ## Run the project
