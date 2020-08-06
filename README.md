@@ -26,9 +26,20 @@ To run the project:
  python .\manage.py runserver
 ```
 
-If you remove somethings on a Class you have to run the 2 following commands:
+If you remove somethings in classes you have to run the 2 following commands:
 
  ```bash
  python .\manage.py makemigration
  python .\manage.py migrate 
 ```
+## Use the project
+
+To use the project you have to create a user you have 2 options here :
+ - register by the super admin command (it work with the both logins)
+ - register by the normal way to get a simple user
+ 
+The filter for the date in the home page shall be used like that :
+
+ month/day/year
+ 
+ 
