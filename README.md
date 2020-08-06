@@ -1,6 +1,7 @@
 # GFC_Test
  Django App Blog
-
+ 
+http://gph.is/1QdK1Yg
 
 ## Run the project
 To run the project you have to be in the testDatadict directory.
