@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    {%  include 'blog/navbar.html' %}
+       
+
+    <!-- Container -->
+    <h1 style="text-align: center; margin: 5rem 2rem;">Index du blog</h1> 
+    
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col">
+                <div class="card card-body">
+        
+                    <form method="get">
+                        {{myFilter.form}}
+        
+                    <button class="btn btn-primary" type="submit">Search</button>
+                  </form>
+        
+                </div>
+            </div>
+            
+        </div>
+      
+      
+      </div>
+    <div class="container" style="margin-bottom: 10px;  display: flex;">
+        
+        <!-- Card here avec un for parcourant les articles donnés via la view -->
+            {%for article in articles%}
+                <div class="card" style="width: 18rem; margin: 10px 10px 0 0;">
+                    <img src="https://www.presse-citron.net/wordpress_prod/wp-content/uploads/2019/01/gardiens-de-la-galaxie.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">{{article.title}} </h5>
+                    <p class="card-text">{{article.content}}</p>
+                    <p>Ecrit par {{article.author}} le {{article.created}}</p>
+                    <a href="article/{{article.id}}" class="btn btn-primary">En Savoir Plus</a>
+                    </div>
+                </div>
+            {% endfor %}
+       
+      </div>
+
+</body>
+</html>

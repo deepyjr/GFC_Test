@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    {%  include 'blog/navbar.html' %}
+
+<!-- Container -->
+<h1 style="text-align: center; margin: 5rem 2rem;">Voir l'article</h1>
+    <div class="container" style="margin-bottom: 10px;  display: flex; ">
+    
+    <!-- Card here -->
+    <div class="card" style=" margin: 10px 10px 0 0; ">
+        <img src="https://www.presse-citron.net/wordpress_prod/wp-content/uploads/2019/01/gardiens-de-la-galaxie.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{articles.title}} </h5>
+          <p class="card-text">{{articles.content}}</p>
+          <p>Ecrit par {{articles.author}} le {{articles.created}}</p>
+          <a href="/article/update/{{articles.id}}" role="button" class="btn btn-primary">Modifier</a>
+          <a href="/article/delete/{{articles.id}}" role="button" class="btn btn-danger">Supprimer</a>
+
+        </div>
+    </div>
+
+  </div>
+</body>
+</html>
