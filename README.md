@@ -3,7 +3,6 @@
  
 You have to watch this gif before : http://gph.is/1QdK1Yg
 
-<iframe src="https://giphy.com/embed/ej0Ay8fH6Y1Wg" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dance-ej0Ay8fH6Y1Wg">via GIPHY</a></p>
 
 ## Run the project
 To run the project you have to be in the testDatadict directory.
